@@ -1,0 +1,2118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>THE BAY BLOC - HR Career Solutions</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet">
+
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<style>
+
+/* =========================
+   BASIC
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #172033;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 94%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    background: #07326b;
+    color: #ffffff;
+
+    padding: 9px 4%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+}
+
+.top-left,
+.top-right {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.topbar i {
+    margin-right: 5px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 85px;
+
+    background: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 4%;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-circle {
+    width: 58px;
+    height: 58px;
+
+    border: 2px solid #0b4d91;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+    font-weight: 800;
+
+    color: #0b4d91;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #dff2ff
+    );
+}
+
+.logo-text h2 {
+    color: #07326b;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.logo-text span {
+    color: #23964a;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+
+    font-size: 14px;
+}
+
+.nav-links a {
+    transition: .3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #23964a;
+}
+
+.phone-btn {
+    background: #299b4b;
+    color: #ffffff;
+
+    padding: 10px 20px;
+
+    border-radius: 25px;
+
+    font-weight: 600;
+}
+
+.phone-btn:hover {
+    background: #197b39;
+}
+
+.menu {
+    display: none;
+    font-size: 25px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 400px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3,39,82,.96) 0%,
+            rgba(3,52,105,.85) 42%,
+            rgba(3,52,105,.20) 100%
+        ),
+        url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+
+    width: 94%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 55px 0;
+}
+
+.hero h1 {
+
+    font-size: 47px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+}
+
+.hero h1 span {
+    color: #39b75c;
+}
+
+.hero h3 {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.hero p {
+
+    margin-top: 15px;
+
+    max-width: 480px;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.hero-list {
+
+    margin-top: 16px;
+
+    list-style: none;
+}
+
+.hero-list li {
+
+    margin: 7px 0;
+
+    font-size: 13px;
+}
+
+.hero-list i {
+
+    color: #39b75c;
+
+    margin-right: 8px;
+}
+
+.hero-buttons {
+
+    margin-top: 22px;
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.btn {
+
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+
+.btn-green {
+    background: #24a348;
+}
+
+.btn-blue {
+    background: #1260ad;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+
+    width: 90%;
+    max-width: 1150px;
+
+    margin: -50px auto 0;
+
+    position: relative;
+
+    background: #ffffff;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 18px rgba(0,0,0,.12);
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    overflow: hidden;
+}
+
+.service {
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    border-right: 1px solid #eeeeee;
+}
+
+.service:last-child {
+    border-right: 0;
+}
+
+.service i {
+
+    font-size: 30px;
+
+    color: #07539b;
+
+    margin-bottom: 10px;
+}
+
+.service h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+.service p {
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    color: #555555;
+}
+
+
+/* =========================
+   STATS
+========================= */
+
+.stats {
+
+    width: 90%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    background: #063a7b;
+
+    color: #ffffff;
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    border-radius: 0 0 6px 6px;
+}
+
+.stat {
+
+    text-align: center;
+
+    padding: 15px;
+
+    border-right:
+        1px solid rgba(255,255,255,.25);
+}
+
+.stat:last-child {
+    border: 0;
+}
+
+.stat h2 {
+
+    color: #42b958;
+
+    font-size: 25px;
+}
+
+.stat p {
+    font-size: 12px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.section-title h2 {
+
+    font-size: 24px;
+}
+
+.section-title h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 40px;
+
+    height: 3px;
+
+    background: #299b4b;
+
+    margin: 10px auto;
+}
+
+
+/* =========================
+   EDUCATION
+========================= */
+
+.education-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap: 14px;
+}
+
+.edu-card {
+
+    border: 1px solid #dddddd;
+
+    border-radius: 7px;
+
+    padding: 18px 10px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 2px 6px rgba(0,0,0,.04);
+}
+
+.edu-card i {
+
+    color: #18896d;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.edu-card h3 {
+
+    font-size: 12px;
+
+    margin-bottom: 10px;
+}
+
+.edu-card p {
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+.guide {
+
+    display: block;
+
+    width: max-content;
+
+    margin: 18px auto 0;
+
+    background: #299b4b;
+
+    color: #ffffff;
+
+    padding: 8px 20px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   JOBS
+========================= */
+
+.jobs-section {
+    background: #fafafa;
+}
+
+.jobs-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap: 14px;
+}
+
+.job-card {
+
+    background: #ffffff;
+
+    border: 1px solid #e3e3e3;
+
+    border-radius: 7px;
+
+    padding: 18px 12px;
+
+    text-align: center;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,.05);
+}
+
+.job-card i {
+
+    font-size: 30px;
+
+    color: #07539b;
+
+    margin-bottom: 12px;
+}
+
+.job-card h3 {
+
+    font-size: 13px;
+
+    min-height: 38px;
+}
+
+.job-card p {
+
+    color: #999999;
+
+    font-size: 11px;
+
+    margin: 8px 0;
+}
+
+.apply {
+
+    display: inline-block;
+
+    background: #07539b;
+
+    color: #ffffff;
+
+    padding: 6px 16px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+}
+
+.apply:hover {
+    background: #06366b;
+}
+
+
+/* =========================
+   LOWER CONTENT
+========================= */
+
+.lower {
+
+    display: grid;
+
+    grid-template-columns:
+        1.2fr 1.2fr .8fr;
+
+    gap: 15px;
+}
+
+.box {
+
+    background: #f1f5f8;
+
+    border-radius: 7px;
+
+    padding: 20px;
+}
+
+.box h2 {
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   WHY CHOOSE
+========================= */
+
+.check-list {
+
+    list-style: none;
+}
+
+.check-list li {
+
+    font-size: 12px;
+
+    margin: 9px 0;
+}
+
+.check-list i {
+
+    color: #299b4b;
+
+    margin-right: 7px;
+}
+
+
+/* =========================
+   SUCCESS
+========================= */
+
+.success p {
+
+    font-size: 12px;
+
+    line-height: 1.7;
+
+    color: #555555;
+}
+
+.success strong {
+
+    display: block;
+
+    margin-top: 10px;
+}
+
+
+/* =========================
+   ENQUIRY FORM
+========================= */
+
+.form input,
+.form select {
+
+    width: 100%;
+
+    border: 1px solid #dddddd;
+
+    border-radius: 6px;
+
+    padding: 12px;
+
+    margin-bottom: 9px;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    background: #ffffff;
+}
+
+.form input:focus,
+.form select:focus {
+
+    outline: none;
+
+    border-color: #299b4b;
+
+    box-shadow:
+        0 0 0 2px rgba(41,155,75,.12);
+}
+
+.form button {
+
+    width: 100%;
+
+    border: 0;
+
+    background: #299b4b;
+
+    color: #ffffff;
+
+    padding: 11px;
+
+    border-radius: 20px;
+
+    font-weight: 600;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.form button:hover {
+    background: #197b39;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    background: #032e67;
+
+    color: #ffffff;
+
+    margin-top: 20px;
+}
+
+.footer-main {
+
+    width: 94%;
+    max-width: 1250px;
+
+    margin: auto;
+
+    padding: 35px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr 1.2fr;
+
+    gap: 30px;
+}
+
+.footer-logo {
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+.footer-main h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 14px;
+}
+
+.footer-main p,
+.footer-main a {
+
+    display: block;
+
+    color: #dddddd;
+
+    font-size: 11px;
+
+    margin: 7px 0;
+}
+
+.social {
+
+    display: flex !important;
+
+    gap: 10px;
+
+    margin-top: 15px !important;
+}
+
+.social i {
+
+    width: 30px;
+
+    height: 30px;
+
+    background: #1260ad;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+.copyright {
+
+    background: #022552;
+
+    padding: 10px 4%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 10px;
+
+    color: #dddddd;
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp {
+
+    position: fixed;
+
+    right: 15px;
+
+    bottom: 20px;
+
+    width: 52px;
+
+    height: 52px;
+
+    background: #25d366;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.25);
+
+    z-index: 99;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:900px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .logo-circle {
+
+        width: 45px;
+        height: 45px;
+
+        font-size: 22px;
+    }
+
+    .logo-text h2 {
+        font-size: 16px;
+    }
+
+    .logo-text span {
+        font-size: 9px;
+    }
+
+    .nav-links {
+
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: #ffffff;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        gap: 20px;
+
+        box-shadow:
+            0 5px 10px rgba(0,0,0,.15);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .phone-btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .services {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        margin-top: -30px;
+    }
+
+    .service:nth-child(2) {
+        border-right: 0;
+    }
+
+    .stats {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .stat:nth-child(2) {
+        border-right: 0;
+    }
+
+    .education-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .jobs-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .lower {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media(max-width:500px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .services {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .education-grid,
+    .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+
+    <div class="top-left">
+
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            Visakhapatnam | AP & Telangana
+        </span>
+
+        <span>
+            <i class="fa-solid fa-envelope"></i>
+            info@thebayblocareers.com
+        </span>
+
+    </div>
+
+
+    <div class="top-right">
+
+        <span>Follow Us:</span>
+
+        <i class="fab fa-facebook-f"></i>
+
+        <i class="fab fa-instagram"></i>
+
+        <i class="fab fa-linkedin-in"></i>
+
+        <i class="fab fa-youtube"></i>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="navbar">
+
+    <a href="#" class="logo">
+
+        <div class="logo-circle">
+            B
+        </div>
+
+        <div class="logo-text">
+
+            <h2>
+                THE BAY BLOC
+            </h2>
+
+            <span>
+                – HR CAREER SOLUTIONS –
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <div class="nav-links" id="navLinks">
+
+        <a href="#" class="active">
+            Home
+        </a>
+
+        <a href="#about">
+            About Us
+        </a>
+
+        <a href="#jobs">
+            Jobs
+        </a>
+
+        <a href="#education">
+            Education
+        </a>
+
+        <a href="#services">
+            Services
+        </a>
+
+        <a href="#gallery">
+            Gallery
+        </a>
+
+        <a href="#contact">
+            Contact Us
+        </a>
+
+    </div>
+
+
+    <a
+        class="phone-btn"
+        href="tel:9989009697"
+    >
+
+        <i class="fa-solid fa-phone"></i>
+
+        9989009697
+
+    </a>
+
+
+    <div
+        class="menu"
+        onclick="toggleMenu()"
+    >
+
+        <i class="fa-solid fa-bars"></i>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section
+    class="hero"
+    id="about"
+>
+
+    <div class="hero-content">
+
+        <h1>
+
+            THE BAY BLOC
+
+            <br>
+
+            <span>
+                HR CAREER SOLUTIONS
+            </span>
+
+        </h1>
+
+
+        <h3>
+            From 10th to PhD – Jobs & Education Experts
+        </h3>
+
+
+        <div class="career-slider">
+    <div id="careerText">
+        We provide complete career solutions including job placements and education guidance.
+    </div>
+        </div>
+
+
+        <ul class="hero-list">
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Job Placements Across Industries
+
+            </li>
+
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Education Guidance (10th to PhD)
+
+            </li>
+
+
+            <li>
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                Trusted by Students & Job Seekers
+
+            </li>
+
+        </ul>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#jobs"
+                class="btn btn-green"
+            >
+                Apply for Jobs
+            </a>
+
+
+            <a
+                href="#education"
+                class="btn btn-blue"
+            >
+                Get Education Guidance
+            </a>
+
+        </div>
+
+    </>
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section id="services">
+
+    <div class="services">
+
+
+        <div class="service">
+
+            <i class="fa-solid fa-briefcase"></i>
+
+            <h3>
+                JOB<br>
+                PLACEMENTS
+            </h3>
+
+            <p>
+                Across Multiple<br>
+                Industries
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h3>
+                EDUCATION<br>
+                GUIDANCE
+            </h3>
+
+            <p>
+                10th to PhD Guidance<br>
+                India & Abroad
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <i class="fa-solid fa-user-tie"></i>
+
+            <h3>
+                CAREER<br>
+                SUPPORT
+            </h3>
+
+            <p>
+                Resume, Interviews<br>
+                & Counselling
+            </p>
+
+        </div>
+
+
+        <div class="service">
+
+            <i class="fa-solid fa-thumbs-up"></i>
+
+            <h3>
+                TRUSTED<br>
+                SERVICE
+            </h3>
+
+            <p>
+                Serving AP & Telangana<br>
+                with Excellence
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stats">
+
+
+        <div class="stat">
+
+            <h2>
+                1000+
+            </h2>
+
+            <p>
+                Candidates Placed
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>
+                500+
+            </h2>
+
+            <p>
+                Students Guided
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>
+                50+
+            </h2>
+
+            <p>
+                Top Recruiters
+            </p>
+
+        </div>
+
+
+        <div class="stat">
+
+            <h2>
+                10+
+            </h2>
+
+            <p>
+                Years of Experience
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EDUCATION
+========================= -->
+
+<section
+    class="section"
+    id="education"
+>
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                EDUCATION GUIDANCE (10th to PhD)
+            </h2>
+
+        </div>
+
+
+        <div class="education-grid">
+
+
+            <div class="edu-card">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <h3>
+                    After 10th (SSC)
+                </h3>
+
+                <p>
+                    Intermediate<br>
+                    Diploma / Polytechnic<br>
+                    ITI Courses
+                </p>
+
+            </div>
+
+
+            <div class="edu-card">
+
+                <i class="fa-solid fa-book-open"></i>
+
+                <h3>
+                    After 12th (Intermediate)
+                </h3>
+
+                <p>
+                    Degree<br>
+                    Engineering<br>
+                    Medical, Pharmacy & More
+                </p>
+
+            </div>
+
+
+            <div class="edu-card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>
+                    Graduation
+                </h3>
+
+                <p>
+                    B.A. B.Com, B.Sc, BBA<br>
+                    B.Tech & Other<br>
+                    UG Courses
+                </p>
+
+            </div>
+
+
+            <div class="edu-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>
+                    Post Graduation
+                </h3>
+
+                <p>
+                    M.A, M.Com, M.Sc<br>
+                    MBA, MCA & Other<br>
+                    PG Courses
+                </p>
+
+            </div>
+
+
+            <div class="edu-card">
+
+                <i class="fa-solid fa-user-graduate"></i>
+
+                <h3>
+                    Higher Studies
+                </h3>
+
+                <p>
+                    M.Tech, PhD<br>
+                    Research Programs<br>
+                    Career Growth
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <span class="guide">
+
+            India & Abroad Education Guidance Available
+
+        </span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     JOBS
+========================= -->
+
+<section
+    class="section jobs-section"
+    id="jobs"
+>
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <h2>
+                LATEST JOB OPENINGS
+            </h2>
+
+        </div>
+
+
+        <div class="jobs-grid">
+
+
+            <div class="job-card">
+
+                <i class="fa-solid fa-calculator"></i>
+
+                <h3>
+                    Accountant
+                </h3>
+
+                <p>
+                    Full Time<br>
+                    📍 Visakhapatnam
+                </p>
+
+                <a
+                    href="tel:9989009697"
+                    class="apply"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+
+            <div class="job-card">
+
+                <i class="fa-solid fa-headset"></i>
+
+                <h3>
+                    Telecaller /<br>
+                    Customer Support
+                </h3>
+
+                <p>
+                    Full Time<br>
+                    📍 Visakhapatnam
+                </p>
+
+                <a
+                    href="tel:9989009697"
+                    class="apply"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+
+            <div class="job-card">
+
+                <i class="fa-solid fa-industry"></i>
+
+                <h3>
+                    Assembly &<br>
+                    Manufacturing Jobs
+                </h3>
+
+                <p>
+                    Full Time<br>
+                    📍 AP & Telangana
+                </p>
+
+                <a
+                    href="tel:9989009697"
+                    class="apply"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+
+            <div class="job-card">
+
+                <i class="fa-solid fa-user-gear"></i>
+
+                <h3>
+                    Helpers &<br>
+                    Technicians
+                </h3>
+
+                <p>
+                    Full Time<br>
+                    📍 AP & Telangana
+                </p>
+
+                <a
+                    href="tel:9989009697"
+                    class="apply"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+
+            <div class="job-card">
+
+                <i class="fa-solid fa-computer"></i>
+
+                <h3>
+                    Computer Operator<br>
+                    / Data Entry
+                </h3>
+
+                <p>
+                    Full Time<br>
+                    📍 Visakhapatnam
+                </p>
+
+                <a
+                    href="tel:9989009697"
+                    class="apply"
+                >
+                    Apply Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY / SUCCESS / FORM
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="lower">
+
+
+            <!-- WHY CHOOSE -->
+
+            <div class="box">
+
+                <h2>
+                    WHY CHOOSE US?
+                </h2>
+
+
+                <ul class="check-list">
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Expert Career Guidance
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Best College & Job Selection
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Admission & Placement Support
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        Affordable & Transparent Services
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-check"></i>
+                        End-to-End Support
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- SUCCESS STORIES -->
+
+            <div class="box success">
+
+                <h2>
+                    SUCCESS STORIES
+                </h2>
+
+                <p>
+
+                    “The Bay Bloc HR Career Solutions
+                    helped me get the right college
+                    admission and placed me in a
+                    reputed company. Thank You!”
+
+                </p>
+
+
+                <strong>
+                    – Ravi K., Placed as Accountant
+                </strong>
+
+            </div>
+
+
+            <!-- ENQUIRY FORM -->
+
+            <div
+                class="box form"
+                id="contact"
+            >
+
+                <h2>
+                    ENQUIRY FORM
+                </h2>
+
+
+                <form id="enquiryForm">
+
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                    >
+
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Phone Number"
+                        pattern="[0-9]{10}"
+                        maxlength="10"
+                        required
+                    >
+
+
+                    <select
+                        id="interest"
+                        required
+                    >
+
+                        <option value="">
+                            Interested In
+                        </option>
+
+                        <option value="Jobs">
+                            Jobs
+                        </option>
+
+                        <option value="Education">
+                            Education
+                        </option>
+
+                        <option value="Career Guidance">
+                            Career Guidance
+                        </option>
+
+                        <option value="Resume & Interview Help">
+                            Resume & Interview Help
+                        </option>
+
+                        <option value="Other">
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <button type="submit">
+                        Submit Enquiry
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+
+    <div class="footer-main">
+
+
+        <div>
+
+            <div class="footer-logo">
+                THE BAY BLOC
+            </div>
+
+            <p>
+                – HR CAREER SOLUTIONS –
+            </p>
+
+            <p>
+                From 10th to PhD – Jobs & Education Experts
+            </p>
+
+            <p>
+                Your Success is Our Mission.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                QUICK LINKS
+            </h3>
+
+            <a href="#">
+                Home
+            </a>
+
+            <a href="#about">
+                About Us
+            </a>
+
+            <a href="#jobs">
+                Jobs
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                OUR SERVICES
+            </h3>
+
+            <a href="#jobs">
+                Job Placement
+            </a>
+
+            <a href="#education">
+                Education Guidance
+            </a>
+
+            <a href="#services">
+                Career Support
+            </a>
+
+            <a href="#contact">
+                Resume & Interview Help
+            </a>
+
+        </div>
+
+
+        <div>
+
+            <h3>
+                CONTACT US
+            </h3>
+
+            <p>
+                📍 Visakhapatnam, AP & Telangana
+            </p>
+
+            <p>
+                📞 9989009697
+            </p>
+
+            <p>
+                ✉ info@thebayblocareers.com
+            </p>
+
+            <p>
+                ⏰ Mon - Sat: 9:00 AM - 7:00 PM
+            </p>
+
+
+            <div class="social">
+
+                <i class="fab fa-facebook-f"></i>
+
+                <i class="fab fa-instagram"></i>
+
+                <i class="fab fa-linkedin-in"></i>
+
+                <i class="fab fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        <span>
+            © 2026 The Bay Bloc HR Career Solutions.
+            All Rights Reserved.
+        </span>
+
+        <span>
+            Privacy Policy | Terms & Conditions
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+    href="https://wa.me/919989009697"
+    class="whatsapp"
+    target="_blank"
+    aria-label="WhatsApp"
+>
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+/* MOBILE MENU */
+
+function toggleMenu() {
+
+    document
+        .getElementById("navLinks")
+        .classList
+        .toggle("show");
+
+}
+
+
+/* ENQUIRY FORM */
+
+document
+    .getElementById("enquiryForm")
+    .addEventListener(
+        "submit",
+        function(event) {
+
+            event.preventDefault();
+
+
+            const name =
+                document
+                .getElementById("name")
+                .value
+                .trim();
+
+
+            const phone =
+                document
+                .getElementById("phone")
+                .value
+                .trim();
+
+
+            const interest =
+                document
+                .getElementById("interest")
+                .value;
+
+
+            /* CHECK PHONE */
+
+            if (phone.length !== 10) {
+
+                alert(
+                    "Please enter a valid 10-digit phone number."
+                );
+
+                return;
+
+            }
+
+
+            /* CREATE WHATSAPP MESSAGE */
+
+            const message =
+
+                "Hello THE BAY BLOC!%0A%0A" +
+
+                "📋 NEW ENQUIRY%0A%0A" +
+
+                "👤 Name: " +
+                encodeURIComponent(name) +
+                "%0A" +
+
+                "📞 Phone: " +
+                encodeURIComponent(phone) +
+                "%0A" +
+
+                "🎯 Interested In: " +
+                encodeURIComponent(interest) +
+                "%0A%0A" +
+
+                "Thank you.";
+
+
+            /* OPEN WHATSAPP */
+
+            window.open(
+
+                "https://wa.me/919989009697?text=" +
+                message,
+
+                "_blank"
+
+            );
+
+        }
+    );
+
+</script>
+
+<script>
+const careerTexts = [
+    "We provide complete career solutions including job placements and education guidance.",
+    "Connect with the right companies and discover the right job opportunities.",
+    "Get expert guidance for your education and career journey.",
+    "From 10th to PhD, we help you choose the right educational path.",
+    "Explore Bank, IT, Non-IT, Pharma, Hospital, Hotel and Manufacturing jobs.",
+    "Build your career with trusted guidance from THE BAY BLOC."
+];
+
+let careerIndex = 0;
+const careerText = document.getElementById("careerText");
+
+setInterval(() => {
+    careerText.style.opacity = "0";
+    careerText.style.transform = "translateY(15px)";
+
+    setTimeout(() => {
+        careerIndex = (careerIndex + 1) % careerTexts.length;
+        careerText.textContent = careerTexts[careerIndex];
+
+        careerText.style.transform = "translateY(-15px)";
+
+        setTimeout(() => {
+            careerText.style.opacity = "1";
+            careerText.style.transform = "translateY(0)";
+        }, 50);
+
+    }, 600);
+
+}, 3500);
+</script>
+</body>
+</html>
